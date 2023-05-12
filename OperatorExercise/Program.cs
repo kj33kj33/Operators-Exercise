@@ -24,6 +24,25 @@
 
                 Console.WriteLine($"{a}*{b} is {product}, {a}-{b} is {difference}, and {a}+{b} is {sum}");
             }
+
+            Console.WriteLine("Hi, what is your circle's radius?");
+
+            var radius = double.Parse(Console.ReadLine());
+
+            Console.WriteLine($"The area of a circle with radius {radius} is " + AreaOfCircle(radius));
+
+            //var i = 3;
+            //var j = 4;
+            //var k = ++i * j++;
+
+            //Console.WriteLine(k);
+        }
+
+        public static double AreaOfCircle(double radius)
+        {
+            var area = Math.PI * Math.Pow(radius, 2);
+
+            return area;
         }
     }
 }
